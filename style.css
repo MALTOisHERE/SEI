@@ -291,5 +291,14 @@ section{
     }
 }
 
+@media (max-width:331px){
+    body{
+        font-size: 10px;
+    }
+    .navigation a{
+        font-size: 0.8em;
+    }
+}
+
         
 
