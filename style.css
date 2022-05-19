@@ -132,6 +132,10 @@ section{
     flex-wrap: wrap;
 }
 
+.sidenav .icon-2 {
+    font-size: 2em;
+}
+
 .card {
     background-color: #fff;
     width: 21.25em;
@@ -308,6 +312,45 @@ section{
 .input-row input[type="submit"]:hover{
     background-color: #ff3737;
 }
+
+
+#mySidenav a {
+    margin-top: 66px;
+    position: fixed; 
+    left: -40px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 60px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+  }
+  
+  #mySidenav a:hover {
+    left: 0; 
+  }
+  
+  
+  #instagram {
+    top: 20px;
+    background: linear-gradient(#515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+  }
+  
+  #discord {
+    top: 80px;
+    background-color: #738adb; 
+  }
+  
+  #paypal {
+    top: 140px;
+    background: linear-gradient(#253b80, #2997d8); 
+  }
+  
+  #facebook {
+    top: 200px;
+    background-color: #1877f2 ;
+  }
 
 @media (max-width:1023px){
     header{
