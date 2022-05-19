@@ -1,5 +1,18 @@
 <!DOCTYPE html>
+<script language="javascript">
+    document.onmousedown=disableclick;
+    status="Bouton droit est désactiver";
+    function disableclick(e)
+    {
+      if(event.button==2)
+       {
+         alert(status);
+         return false;	
+       }
+    }
+    </script>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
