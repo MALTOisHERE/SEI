@@ -213,7 +213,7 @@ section{
 }
 
 .footer {
-    background: url(images/istockphoto-1284541657-170667a.jpg) no-repeat;
+    background-color: #010918;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -232,24 +232,23 @@ section{
     color: #3a6ff4;    
 }
 .mail{
-    background: url(images/email-background-images-3-background-check-all-preview.jpg) no-repeat;
+    background-color: #010918;
     background-size: cover;
     background-position: center;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
   }
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #04307c;
     color: white;
@@ -259,12 +258,10 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #ff3737;
   }
   
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
