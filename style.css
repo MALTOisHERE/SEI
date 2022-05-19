@@ -274,9 +274,10 @@ section{
     border-radius: 3px;
     outline: 0;
     margin-bottom: 3px;
-    font-size: 1.1em;
+    font-size: 1em;
     border: 1px solid #04307c;
     transition: 0.7s ease;
+    box-sizing: border-box;
 }
 
 .input-row input:hover, textarea:hover{
