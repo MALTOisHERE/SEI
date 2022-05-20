@@ -437,11 +437,18 @@ section{
 @media (max-width:540px){
     .footer-title{
         font-size: 1em;
+        
+    }
+    .main .download{
+        display: none;
     }
     .footer .social-icons a{
         font-size: 1.3em;
         padding-right: 20px;
     }
+}
+@media (max-width:700px){
+    
 }
 @media (max-width:414px){
     .footer-title{
@@ -451,6 +458,7 @@ section{
         font-size: 1em;
         padding-right: 20px;
     }
+    
 }
 
 @media (max-width:393px){
