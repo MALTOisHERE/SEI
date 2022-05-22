@@ -304,6 +304,7 @@ section{
     width: 100px;
     display: block;
     margin:0 auto;
+    box-sizing: content-box;
     text-align: center;
     color: #fff;
     cursor: pointer;
