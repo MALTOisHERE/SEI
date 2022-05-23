@@ -136,7 +136,7 @@ section{
     flex-wrap: wrap;
 }
 .content p{
-    margin-top: 2em;
+    margin-top: 0em;
     font-size: 1.2em;
 }
 
