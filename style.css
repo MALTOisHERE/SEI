@@ -46,6 +46,7 @@ header{
 
 section{
     padding: 100px 200px;
+    align-items: center;
 
 }
 
@@ -135,26 +136,30 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.historique{
+    padding-bottom: 0;
+
+}
 .content p{
     margin-top: 0em;
     font-size: 1.2em;
 }
 
-.historique .title{
-    color: #fff;
+.content .bas{
+    margin-top: 1em;
+    font-size: 1.2em;
 }
-.historique{
-    background-color: #051c2c;
-    color: #fff;
-}
+
 .commercial {
     width: 20em;
     text-align: justify;
     font-size: 1.2em;
-    box-sizing: border-box;
+    box-sizing: content-box;
     justify-content: center;
-    padding: 5px;
-    margin-right: 1em;
+    align-items: center;
+    padding: 0.6em;
+    margin-right: 1.5em;
     margin-top: 2em;
 }
 
@@ -169,47 +174,25 @@ position: relative;
   font-size: 2em;
   font-weight: 800;
   text-align: left;
+  transition: 0.7s ease;
 }
+
+.img-title:hover{
+    transform: scaleY(1.1);
+}
+
 .commercial-img img{
     margin-bottom: 10px;
-    width: 100%;
     border-radius: 5px;
     filter: brightness(40%);
+    width: 100%;  
 }
 
 .img-title{
     position: absolute;
 }
 
-.historique .title{
-    padding-bottom: 50px;
-}
 
-.mission{
-    width: 50%;
-}
-
-.mission h2{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-weight: 500;
-}
-
-#table{
-    width: 100%;
-    border-collapse: collapse;
-    
-}
-#table td{
-    padding: 8px;
-    vertical-align: top;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    padding-right: 200px;
-
-}
 
 .sidenav .icon-2 {
     font-size: 2em;
@@ -328,6 +311,9 @@ position: relative;
 
 .contact .content{
     padding-bottom: 3em;
+}
+.contact p{
+    font-size: 1.1em;
 }
 
 .form-container{
@@ -451,6 +437,7 @@ position: relative;
     align-items: center;
     transition: 0.7s ease;
   }
+  
   #go-back a:hover{
     color: #04307c; 
   }
@@ -499,6 +486,9 @@ position: relative;
       color: #ff3737;
       
 }
+@media (max-width:1332px) {
+    
+}
 
 @media (max-width:1023px){
     header{
@@ -531,19 +521,6 @@ position: relative;
         font-size: 1em;
     }
 }
-.alert {
-    background-color: rgba(0, 128, 0, 0.438);
-    padding: 7px;
-    margin-top: 10px;
-    justify-content: center;
-    box-sizing: border-box;
-    color: rgb(2, 63, 2);
-    border-radius: 5px;
-    border: 1px solid rgb(1, 54, 1);
-    text-align: center;
-    box-sizing: content-box;
-}
-
 
 @media (max-width:641px){
     body{
