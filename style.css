@@ -11,6 +11,11 @@
     display: none;
   }
 
+  body{
+    cursor: url('images/iconnnn.png'), auto;
+  }
+  
+
 header{
     background-color: #f0f0f0;
     width: 100%;
@@ -466,6 +471,7 @@ position: relative;
     box-shadow: 0 5px 25px rgba(255, 255, 255, 0.432);
     transition: 0.7s ease;
     z-index: 999;
+    cursor: url('images/icons8-sort-up-30.png'), auto;
   }
 
   #back-btn:hover{
