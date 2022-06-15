@@ -528,18 +528,18 @@ position: relative;
 }
 
 @media (max-width:1485px){
-    .main h2 span{
+    .main h2 span,.main h3{
         font-size: 2em;
     }
 }
 @media (max-width:753px){   
-    .main h2 span{
+    .main h2 span,.main h3{
         font-size: 1.5em;
     }
 }
 
 @media (max-width:438px){
-    .main h2 span{
+    .main h2 span,.main h3{
         font-size: 1em;
     }
 }
