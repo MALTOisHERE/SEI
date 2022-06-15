@@ -293,19 +293,20 @@
             <form action="https://formspree.io/f/mbjwbdpo" method="POST">
                 <div class="input-row">
                     <label>Nom complet <em>*</em></label>
-                    <input type="text" name="Name" placeholder="Ton nom complet..." required>
+                    <input title="Format: Prenom Nom " type="text" name="Name" pattern="[a-zA-Z]* [a-zA-Z]*" placeholder="Ton nom complet..." required>
                 </div>
                 <div class="input-row">
                     <label>Addresse électronique <em>*</em></label>
-                    <input type="email" name="Email" placeholder="Ton e-mail..." required>
+                    <input title="Format: exemlpe@exemlpe.com" type="email" name="Email" placeholder="Ton e-mail..." required>
                 </div>
                 <div class="input-row">
                     <label>Téléphone <em>*</em></label>
-                    <input type="tel" name="Phone" placeholder="Ton téléphone..." required>
+                    
+                    <input type="tel" name="Phone" pattern="[0-9]{10}" title="10 chiffre requise - Format: 0123456789" placeholder="Ton téléphone..." required>
                 </div>
                 <div class="input-row">
                     <label>Message <em>*</em></label>
-                    <textarea name="Message" placeholder="Ton message..." required></textarea>
+                    <textarea title="Taper votre message" name="Message" placeholder="Ton message..." required></textarea>
                 </div>
                 <div class="input-row">
                     <button title="Envoyer" type="submit">Soumettre</button>
