@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<script language="javascript">
+    <!--Script pour desactiver click droit-->
+    <script language="javascript">
     document.onmousedown=disableclick;
     status="Bouton droit est désactiver";
     function disableclick(e)
@@ -11,17 +12,18 @@
        }
     }
     </script>
+
+    <!--Script pour Afficher et Fermer la bar de navigation-->
     <script>
-        /* Open when someone clicks on the span element */
         function openNav() {
         document.getElementById("myNav").style.width = "100%";
-}
+        }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
     </script>
+
 <html lang="en">
     
 <head>
@@ -31,59 +33,62 @@ function closeNav() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" type="icon" href="images/Untitled design.png">
     <link rel="stylesheet" href="style.css">
-
     <title>Sud Electronique Informatique</title>
 </head>
+
 <body>
+
     <header>
+        <!--Logo de la societe SEI-->
         <a title="-- Sud Electronique Informatique --" href="" class="logo"><img src="images/Logo12.png" width="115"></a>
+        <!--La bar de navigation PC-->
         <nav class="navigation">
             <a title="Nos métiers" href="#services">métiers</a>
             <a title="Nos organisations" href="#organisation">organisations</a>
             <a title="Nos réalisations" href="#projects">réalisations</a>
             <a title="Contacter nous" href="#contact">contact</a>
         </nav>
-        <!-- The overlay -->
-<div id="myNav" class="overlay">
-
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="#services">métiers</a>
-      <a href="#organisation">organisations</a>
-      <a href="#projects">réalisations</a>
-      <a href="#contact">contact</a>
-    </div>
-  
-  </div>
-  
-  <!-- Use any element to open/show the overlay navigation menu -->
-  <span onclick="openNav()" class="bar"><i class="fas fa-bars"></i></i></span>
+        <!--Bar de navigation pour telephone-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--Fermer-->
+            <div class="overlay-content">
+                <a href="#services">métiers</a>
+                <a href="#organisation">organisations</a>
+                <a href="#projects">réalisations</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div>
+        <span onclick="openNav()" class="bar"><i class="fas fa-bars"></i></i></span> <!--Ouvrir-->
     </header>
 
+    <!--Bar de navigation pour les reseaux sociaux-->
     <div id="mySidenav" class="sidenav">
         <a title="Instagram" href="https://www.instagram.com/free_dom_w/" id="instagram"><i class="fab fa-instagram"></i></a>
         <a title="Discord" href="https://discord.gg/3fcn8aYAzm" id="discord"><i class="fab fa-discord"></a>
         <a title="Paypal" href="https://www.paypal.com/paypalme/MAITOUAARAB" id="paypal"><i class="fab fa-paypal"></i></a>
         <a title="Facebook" href="https://web.facebook.com/ait.ouaarab" id="facebook"><i class="fab fa-facebook"></i></a>
-      </div>
+    </div>
 
-      <div id="go-back" class="back">
+    <!--Boutton pour revenir a l'acceuill-->
+    <div id="go-back" class="back">
         <a title="Revenir à l'accueil" href="#" id="back-btn"><i class="fas fa-arrow-up"></i></a>
-      </div>
+    </div>
 
+    <!--Home-->
     <section class="main">
         <div>
+            <!--Titre-->
             <h2>FONDÉE EN 1991<br><span>Sud Electronique Informatique</span></h2>
             <div class="certificat">
                 <h3>Certifié ISO 9001 Version 2008 </h3>
+                <!--Download button-->
                 <div class="download">
                     <a title="Télécharger la certficat" href="Download/Certificat ISO 9001 Version 2008.pdf" download="Certificat ISO 9001 Version 2008"><i class="fas fa-download"></i></a>
                 </div>
             </div>
+            <!--Button pour consulter les projet-->
             <a title="Nos projet" href="#projects" class="main-btn">Consulter nos projet</a>
+            <!--Reseaux sociaux-->
             <div class="social-icons">
                 <a title="Localisation" href="https://www.google.com/maps/place/SUD+%C3%89LECTRONIQUE+INFORMATIQUE/@30.4235433,-9.5942806,18.5z/data=!4m5!3m4!1s0xdb3b6f4483e94d3:0xd29eda8e92a93ebf!8m2!3d30.423526!4d-9.593509"><i class="fas fa-map-marker-alt"></i></a>
                 <a title="Instagram" href="https://www.instagram.com/free_dom_w/"><i class="fab fa-instagram"></i></a>
@@ -94,10 +99,9 @@ function closeNav() {
         </div>
     </section>
 
-    
-
+    <!--Section 2 (Nos activiter)-->
     <section class="cards" id="services">
-        <h2 class="title">Nos Activités</h2>
+        <h2 class="title">Nos Activités</h2> <!--Titre du section-->
         <div class="content">
             <div class="card">
                 <div class="icon">
@@ -178,12 +182,12 @@ function closeNav() {
                     </p>
                 </div>
             </div>
-            
         </div>
     </section>
 
+    <!--Section 2 (Nos organisation)-->
     <section class="organisation" id="organisation">
-        <h2 class="title">Nos Organisation</h2>
+        <h2 class="title">Nos Organisation</h2> <!--Titre du section-->
         <div class="content">
             <div class="commercial">
                 <div class="commercial-img">
@@ -212,15 +216,14 @@ function closeNav() {
                     <div class="img-title">Service aprés vente & maintenance</div>
                 </div>
                 <div class="def-commercial">
-                <p><strong>Sud Electronique</strong> s’engage à maintenir vos systèmes et installations à leur niveau de performances optimales, grâce à : <br><br>
-                <strong>Vigicenter</strong>  : notre centre de télésurveillance opérationnel 24h/24 et 7j/7 ; <br><br>
-                &nbsp;- Des interlocuteurs hautement qualifiés et des équipes formées régulièrement pour plus d’efficience  et d’efficacité ; <br><br>
-                &nbsp;- Une équipe de techniciens assurant les dépannages sous garantie ; <br><br>
-                &nbsp;- Des contrats de maintenance à la carte avec des prestations personnalisées, nous disposons de 3 formules : Assistance, Performance et Excellence ; <br><br>
-                &nbsp;- Un service de proximité à travers les différents points service répartis sur tout le territoire Marocain. <br><br>
-                &nbsp;- Notre service de maintenance vous propose également des audits de votre installation afin de contrôler l’adéquation de votre système de sécurité aux risques existants dans votre établissement. <br><br>
-
-                <strong>Sud Electronique</strong> vous conseille sur les mises à niveau à apporter à votre installation pour suivre les évolutions réglementaires et technologiques.</p>
+                    <p><strong>Sud Electronique</strong> s’engage à maintenir vos systèmes et installations à leur niveau de performances optimales, grâce à : <br><br>
+                    <strong>Vigicenter</strong>  : notre centre de télésurveillance opérationnel 24h/24 et 7j/7 ; <br><br>
+                    &nbsp;- Des interlocuteurs hautement qualifiés et des équipes formées régulièrement pour plus d’efficience  et d’efficacité ; <br><br>
+                    &nbsp;- Une équipe de techniciens assurant les dépannages sous garantie ; <br><br>
+                    &nbsp;- Des contrats de maintenance à la carte avec des prestations personnalisées, nous disposons de 3 formules : Assistance, Performance et Excellence ; <br><br>
+                    &nbsp;- Un service de proximité à travers les différents points service répartis sur tout le territoire Marocain. <br><br>
+                    &nbsp;- Notre service de maintenance vous propose également des audits de votre installation afin de contrôler l’adéquation de votre système de sécurité aux risques existants dans votre établissement. <br><br>
+                    <strong>Sud Electronique</strong> vous conseille sur les mises à niveau à apporter à votre installation pour suivre les évolutions réglementaires et technologiques.</p>
                 </div>
             </div>
 
@@ -228,8 +231,9 @@ function closeNav() {
         </div>
     </section>
 
+    <!--Section 3 (Realisation)-->
     <section class="projects" id="projects">
-        <h2 class="title2">Réalisations</h2>
+        <h2 class="title2">Réalisations</h2> <!--Titre du section-->
         <div class="content">
             <div class="project-card">
                 <div class="project-image">
@@ -294,9 +298,11 @@ function closeNav() {
         </div>
     </section>
 
+    <!--Section 2 (Contact)-->
     <section class="cards contact" id="contact">
-        <h2 class="title">Contact</h2>
+        <h2 class="title">Contact</h2> <!--Titre du section-->
         <div class="content">
+            <!--Tel card-->
             <div class="card">
                 <div class="icon">
                     <i class="fas fa-phone"></i>
@@ -306,6 +312,7 @@ function closeNav() {
                     <p>+212 (0) 528 82 83 33</p>
                 </div>
             </div>
+            <!--Mail card-->
             <div class="card">
                 <div class="icon">
                     <i class="fas fa-envelope"></i>
@@ -317,21 +324,26 @@ function closeNav() {
                 </div>
             </div>
         </div>
+
+        <!--Contact form-->
         <div class="form-container">
-            <form action="https://formspree.io/f/mbjwbdpo" method="POST">
+            <form action="https://formspree.io/f/mbjwbdpo" method="POST"> <!--Laison avec platform de messagerie-->
+                <!--Champ du nom cemplet-->
                 <div class="input-row">
                     <label>Nom complet <em>*</em></label>
                     <input title="Format: Prenom Nom " type="text" name="Name" pattern="[a-zA-Z]* [a-zA-Z]*" placeholder="Ton nom complet..." required>
                 </div>
+                <!--Champs E-mail-->
                 <div class="input-row">
                     <label>Addresse électronique <em>*</em></label>
                     <input title="Format: exemlpe@exemlpe.com" type="email" name="Email" placeholder="Ton e-mail..." required>
                 </div>
+                <!--Champs Telephone-->
                 <div class="input-row">
                     <label>Téléphone <em>*</em></label>
-                    
                     <input type="tel" name="Phone" pattern="[0-9]{10}" title="10 chiffre requise - Format: 0123456789" placeholder="Ton téléphone..." required>
                 </div>
+                <!--Champs Message-->
                 <div class="input-row">
                     <label>Message <em>*</em></label>
                     <textarea title="Taper votre message" name="Message" placeholder="Ton message..." required></textarea>
@@ -343,11 +355,10 @@ function closeNav() {
         </div>
     </section>
 
-       
-    </section>
-
+    <!--Fin-->
     <footer class="footer">
-        <p class="footer-title"><span>©2022 </span>- MALTO</p>
+        <p class="footer-title"><span>©2022 </span>- MALTO</p> <!--Createur et date de creation-->
+        <!--Reseaux sociaux-->
         <div class="social-icons">
             <a title="Facebook" href="https://web.facebook.com/ait.ouaarab"><i class="fab fa-facebook"></i></a>
             <a title="Instagram" href="https://www.instagram.com/free_dom_w/"><i class="fab fa-instagram"></i></a>
@@ -355,5 +366,7 @@ function closeNav() {
             <a title="Paypal" href="https://www.paypal.com/paypalme/MAITOUAARAB"><i class="fab fa-paypal"></i></a>
         </div>
     </footer>
+
 </body>
+
 </html>
